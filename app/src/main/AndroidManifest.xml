@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kamron.pogoiv">
+    package="com.jakevin.pokeshout">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -87,7 +87,7 @@
     </compatible-screens>
 
     <application
-        android:name=".PoGoApplication"
+        android:name="com.jakevin.pokeshout.PoGoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -95,7 +95,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.jakevin.pokeshout.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
@@ -108,12 +108,12 @@
         </activity>
 
         <activity
-            android:name=".SettingsActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.jakevin.pokeshout.SettingsActivity"
+            android:parentActivityName="com.jakevin.pokeshout.MainActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".ShareHandlerActivity"
+            android:name="com.jakevin.pokeshout.ShareHandlerActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -123,14 +123,14 @@
         </activity>
 
         <service
-            android:name=".Pokefly"
+            android:name="com.jakevin.pokeshout.Pokefly"
             android:exported="true" />
 
         <service
-            android:name=".updater.DownloadUpdateService"
+            android:name="com.jakevin.pokeshout.updater.DownloadUpdateService"
             android:exported="false" />
 
-        <activity android:name=".clipboard.ClipboardModifierActivity" />
+        <activity android:name="com.jakevin.pokeshout.clipboard.ClipboardModifierActivity" />
     </application>
 
 </manifest>

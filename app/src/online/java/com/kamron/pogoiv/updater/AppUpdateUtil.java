@@ -1,4 +1,4 @@
-package com.kamron.pogoiv.updater;
+package com.jakevin.pokeshout.updater;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AlertDialog;
 
-import com.kamron.pogoiv.BuildConfig;
-import com.kamron.pogoiv.MainActivity;
-import com.kamron.pogoiv.R;
+import com.jakevin.pokeshout.BuildConfig;
+import com.jakevin.pokeshout.MainActivity;
+import com.jakevin.pokeshout.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

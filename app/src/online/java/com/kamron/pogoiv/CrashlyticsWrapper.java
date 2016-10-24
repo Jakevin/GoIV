@@ -1,4 +1,4 @@
-package com.kamron.pogoiv;
+package com.jakevin.pokeshout;
 
 import android.content.Context;
 import android.text.TextUtils;
